@@ -67,7 +67,7 @@ function ContactMe() {
     console.log(randomColor);
 
     const webhookUrl =
-      'http://localhost:8080/https://ptb.discord.com/api/webhooks/1214938248535871549/6eYtmkKW602DSxLQjjgX9OkV6PoUIcWyluQPwGvrIlvXG8Zb6MVPn6rUd524PRuITt_N';
+      'https://ptb.discord.com/api/webhooks/1214938248535871549/6eYtmkKW602DSxLQjjgX9OkV6PoUIcWyluQPwGvrIlvXG8Zb6MVPn6rUd524PRuITt_N';
 
     try {
       const response = await fetch(webhookUrl, {
