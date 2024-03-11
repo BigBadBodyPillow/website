@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://gists.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
+
+:root {
+  --rainbow: linear-gradient(
+    to left,
+    #fef26a,
+    #fe8462,
+    #ff70cb,
+    #d270ff,
+    #743ad5,
+    #709df8,
+    #5bffbd,
+    #709df8,
+    #743ad5,
+    #d270ff,
+    #ff70cb,
+    #fe8462,
+    #fef26a
+  );
+  --yellow: #fef26a !important;
+  --red: #fe8462 !important;
+  --pink: #ff70cb !important;
+  --indigo: #d270ff !important;
+  --purple: #743ad5 !important;
+  --sky: #709df8 !important;
+  --green: #5bffbd !important;
+
+  --accent: #2c2929;
+}
+* {
+  user-select: none;
+}
+
+.rainbow-line {
+  height: 1px;
+  background-image: var(--rainbow);
+  background-size: 400%;
+  animation: rainbow-animation 100s infinite;
+}
+.c {
+  user-select: none;
+}
+.me {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: 'Roboto Mono';
+  color: transparent;
+  background-image: var(--rainbow);
+  background-size: 400%;
+  background-clip: text;
+  color: transparent;
+
+  letter-spacing: 1rem;
+
+  animation: rainbow-animation 100s infinite;
+}
+.welcome {
+  top: -25px;
+  letter-spacing: 1rem;
+  white-space: nowrap;
+  font-size: var(1rem);
+  color: white;
+
+  animation: rainbow-animation 100s infinite;
+}
+.welcome:hover {
+  color: transparent;
+  background-image: var(--rainbow);
+  background-size: 400%;
+  background-clip: unset;
+  /* background-clip: text; */
+  color: var(--accent);
+}
+.hyphen {
+  color: white;
+}
+
+svg {
+  pointer-events: none;
+}
+.backthing {
+  background-image: radial-gradient(
+    rgba(254, 242, 106, 0.2),
+    rgba(254, 132, 98, 0.2),
+    rgba(255, 112, 203, 0.2),
+    rgba(210, 112, 255, 0.2),
+    rgba(116, 58, 213, 0.2),
+    rgba(112, 157, 248, 0.2),
+    rgba(91, 255, 189, 0.2),
+    transparent
+  );
+  filter: blur(90px);
+}
+
+@keyframes rainbow-animation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
