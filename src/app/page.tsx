@@ -42,7 +42,7 @@ export default function Home() {
           d
         </div>
         <ContactMe />
-        <Boxes />
+        {/* <Boxes /> */}
       </div>
       <Analytics />
       <SpeedInsights />
