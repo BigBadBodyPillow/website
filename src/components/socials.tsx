@@ -167,7 +167,12 @@ c-61 0 -117 4 -124 9 -8 4 -12 19 -10 32 2 20 8 24 38 23 19 -1 56 -5 83 -9
           </a>
         </li>
         <li className="discord-li pointer-events-auto">
-          <a className="discord-a" draggable="false">
+          <a
+            className="discord-a"
+            href="https://discord.com/users/244425759739871233"
+            target="_blank"
+            draggable="false"
+          >
             <svg
               className="discord-svg"
               xmlns="http://www.w3.org/2000/svg"
