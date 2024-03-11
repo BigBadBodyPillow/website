@@ -3,6 +3,7 @@ import ContactMe from '@/components/contact';
 import Socials from '@/components/socials';
 import { Boxes } from '@/components/ui/background-boxes';
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 // import '../../public/oneko.js';
 import { useEffect } from 'react';
 
@@ -44,6 +45,7 @@ export default function Home() {
         <Boxes />
       </div>
       <Analytics />
+      <SpeedInsights />
     </div>
   );
 }
