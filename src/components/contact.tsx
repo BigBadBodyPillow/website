@@ -135,7 +135,7 @@ function ContactMe() {
             </span>
             <div className="rainbow-line secondwan"></div>
           </div>
-          <BackgroundBeams />
+          {/* <BackgroundBeams /> */}
           <div className="form-container h-full w-full grid items-center justify-center">
             <form>
               <div className="name-group">

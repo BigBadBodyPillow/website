@@ -5,9 +5,15 @@ import { Boxes } from '@/components/ui/background-boxes';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 // import '../../public/oneko.js';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
+  const [showBoxes, setShowBoxes] = useState(false);
+
+  const toggleBoxes = () => {
+    setShowBoxes(!showBoxes);
+  };
+
   useEffect(() => {
     const script = document.createElement('script');
     script.src = '/oneko.js';
@@ -42,7 +48,14 @@ export default function Home() {
           d
         </div>
         <ContactMe />
-        {/* <Boxes /> */}
+        <div
+          className="enable-box w-10 h-10 border-2 border-cyan-300 absolute bottom-0 right-0 my-3 mx-3 z-20"
+          id="boxEnable"
+          onClick={toggleBoxes}
+        >
+          {showBoxes ? 'Hide Boxes' : 'Show Boxes'}
+        </div>
+        {showBoxes && <Boxes />}
       </div>
       <Analytics />
       <SpeedInsights />
