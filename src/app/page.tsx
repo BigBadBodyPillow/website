@@ -32,7 +32,7 @@ export default function Home() {
             </h1>
             <h2 className="cursor-pointer welcome relative z-20 text-[1.5rem] w-full flex justify-center">
               <span className="hyphen">-</span>
-              Welcome to my portfolio
+              Welcome to my website
               <span className="hyphen">-</span>
             </h2>
             <Socials />
